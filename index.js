@@ -15,7 +15,7 @@ const shoppingListEl = document.getElementById("shopping-list")
 
 onValue(shoppingListinDB, function(snapshot){
     let itemsArray = Object.values(snapshot.val())
-    clearInputFieldEl()
+    clearShoppingListEl()
     for(let i=0;i<itemsArray.length;i++){
         appendItemToShoppinglistEl(itemsArray[i])
     }
